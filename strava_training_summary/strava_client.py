@@ -3,13 +3,14 @@ import configparser
 import time
 import os
 
+CONFIG_FILE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'conf.ini')
+
 
 class StravaClient:
     API_URL = "https://www.strava.com/api/"
     API_VERSION = 'v3'
 
-    def __init__(self, config_file_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'conf.ini')):
-        print(config_file_path)
+    def __init__(self, config_file_path=CONFIG_FILE_PATH):
         self.config_file_path = config_file_path
         self.config, self.api_data, self.header = None, None, None
 

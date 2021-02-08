@@ -141,3 +141,4 @@ cython_debug/
 # project specific
 conf.ini
 .idea/
+.DS_Store

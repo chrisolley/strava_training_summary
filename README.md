@@ -15,3 +15,6 @@ To install, clone the repository, navigate to the root directory and run `pip in
 ### Running
 
 Once the package has been installed, the CLI can be run by typing `strava_training_summary` into the command line. You will be prompted for a date range to pull the records from.
+
+
+![Output sample](docs/training_summary.gif)
