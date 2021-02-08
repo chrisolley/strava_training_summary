@@ -139,5 +139,5 @@ dmypy.json
 cython_debug/
 
 # project specific
-*.ini
+conf.ini
 .idea/

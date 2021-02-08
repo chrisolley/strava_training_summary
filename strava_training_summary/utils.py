@@ -8,6 +8,8 @@ WEEKDAYS = {0: 'Mon',
             5: 'Sat',
             6: 'Sun'}
 
+METERS_TO_MILES = 1.60934 * 1000
+
 
 def activities_to_df(detailed_activities):
     keys_to_keep = ['id', 'name', 'start_date_local', 'distance', 'description']
@@ -16,7 +18,7 @@ def activities_to_df(detailed_activities):
     activities_df['start_datetime'] = pd.to_datetime(activities_df['start_date_local'])
     activities_df['week_start_date'] = (activities_df['start_datetime'] - activities_df['start_datetime'].dt.weekday.astype('timedelta64[D]')).dt.date
     activities_df['start_date'] = activities_df['start_datetime'].dt.date
-    activities_df['distance'] = activities_df['distance'] / (1.60934*1000)
+    activities_df['distance'] = activities_df['distance'] / METERS_TO_MILES
     return activities_df.sort_values('start_date')
 
 

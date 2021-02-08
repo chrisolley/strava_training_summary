@@ -9,7 +9,7 @@ setup(
       version='0.1',
       packages=find_packages(),
       description='Strava training summary CLI tool',
-      url='http://github.com/chrisolley/',
+      url='https://github.com/chrisolley/strava_training_summary/',
       author='Chris Olley',
       author_email='olley.cj@gmail.com',
       license='MIT',
