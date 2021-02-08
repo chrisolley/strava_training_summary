@@ -1,6 +1,6 @@
 ## Strava Training Summary Generator
 
-This repo contains a simple CLI to generate training summaries from Strava that can be installed as a Python package.
+This repo contains a simple CLI that wraps the Strava API to generate training summaries, that can be installed as a Python package. The summaries are generated in a weekly format, using information from activities descriptions and mileage.
 
 ### Requirements
 
